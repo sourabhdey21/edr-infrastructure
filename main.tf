@@ -4,10 +4,4 @@ resource "aws_s3_bucket" "my_bucket" {
 }
 
 
-resource "aws_eip" "my_eip" {
-  vpc = true
-}
 
-output "elastic_ip" {
-  value = aws_eip.my_eip.public_ip
-}
